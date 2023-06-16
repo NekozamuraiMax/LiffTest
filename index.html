@@ -55,6 +55,7 @@
 
     $('form').submit(function( event ) {
       event.preventDefault();
+      window.alert($('form').serialize());
       $.post( 'https://script.google.com/macros/s/AKfycbzPnAGy8CdQG4z6oh4W64AOaDqB2ZZBMhxUw6sGOqDuXTeYg7iPLA6K0QXQlF79n5-O9Q/exec', $('form').serialize() );
     });
   </script>
